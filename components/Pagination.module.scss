@@ -1,0 +1,16 @@
+.block {
+  margin-top: 20px;
+  nav {
+    display: flex;
+    justify-content: center;
+    ul {
+      background: darkcyan;
+      padding: 10px;
+      border-radius: 8px;
+      color: white;
+      li {
+        color: white;
+      }
+    }
+  }
+}
