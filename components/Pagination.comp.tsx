@@ -1,7 +1,7 @@
 'use client'
 import * as React from 'react'
 import { useRouter } from 'next/navigation'
-import { updateSearchParams } from '../app/utils'
+import { updateSearchParams } from '../utils'
 import BlockButtonsComp from './BlockButtons.comp'
 import ButtonComp from './Button.comp'
 
