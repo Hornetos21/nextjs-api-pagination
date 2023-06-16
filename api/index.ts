@@ -1,3 +1,5 @@
+//API https://api.spaceflightnewsapi.net/v4/docs/#/reports/reports_list
+
 export interface Item {
   id: number
   title: string
@@ -23,7 +25,7 @@ async function getData(
   const response = await fetch(
     `https://api.spaceflightnewsapi.net/v4/${endpoint}/?limit=${limit}&offset=${offset}`
   )
-  if (!response.ok) throw new Error('Unable to fetch posts')
+  if (!response.ok) throw new Error('Unable to fetch data')
   return response.json()
 }
 
@@ -31,7 +33,7 @@ async function getItem(endpoint: string, id: string): Promise<Item> {
   const response = await fetch(
     `https://api.spaceflightnewsapi.net/v4/${endpoint}/${id}`
   )
-  if (!response.ok) throw new Error('Unable to fetch posts')
+  if (!response.ok) throw new Error('Unable to fetch article')
   return response.json()
 }
 export { getData, getItem }
