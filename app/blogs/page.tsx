@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 }
 
 export default async function News() {
-  const data = await getData('blogs/')
+  const data = await getData('blogs', 8, 0)
   const articles = data.results
 
   return (
