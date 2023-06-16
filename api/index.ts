@@ -16,12 +16,16 @@ interface FetchData {
   previous: string
   results: Item[]
 }
-
-async function getData(
-  endpoint: string,
-  limit: number,
+interface getDataProps {
+  endpoint: string
+  limit: number
   offset: number
-): Promise<FetchData> {
+}
+async function getData({
+  endpoint,
+  limit,
+  offset,
+}: getDataProps): Promise<FetchData> {
   const response = await fetch(
     `https://api.spaceflightnewsapi.net/v4/${endpoint}/?limit=${limit}&offset=${offset}`
   )

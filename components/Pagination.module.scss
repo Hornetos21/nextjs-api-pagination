@@ -1,6 +1,17 @@
 .block {
   margin-top: 20px;
-  nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  button {
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    background: darkcyan;
+    cursor: pointer;
+  }
+
+  /*  nav {
     display: flex;
     justify-content: center;
     ul {
@@ -12,5 +23,5 @@
         color: white;
       }
     }
-  }
+  }*/
 }

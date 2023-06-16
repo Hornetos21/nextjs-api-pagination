@@ -4,7 +4,7 @@ const HeaderComp = () => {
   return (
     <header className={styles.header}>
       <Link href="/">Home</Link>
-      {/*<Link href="/Articles.comp">News</Link>*/}
+      <Link href="/articles">News</Link>
       <Link href="/blogs">Blog</Link>
     </header>
   )

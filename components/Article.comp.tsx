@@ -1,10 +1,13 @@
 import Link from 'next/link'
 import styles from './Article.module.scss'
 import { Item } from '../api'
+import { useRouter } from 'next/navigation'
 interface Props {
   article: Item
 }
 const ArticleComp = ({ article }: Props) => {
+  const navigate = useRouter()
+
   return (
     <div className={styles.article}>
       <div className={styles.wrapper}>

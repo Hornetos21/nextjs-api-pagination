@@ -1,5 +1,3 @@
-import News from './articles/page'
-
 export default function Home() {
-  return <News />
+  return <h1>Spaceflight News</h1>
 }
