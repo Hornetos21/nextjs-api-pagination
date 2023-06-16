@@ -1,10 +1,9 @@
 'use client'
 import * as React from 'react'
-import Pagination from '@mui/material/Pagination'
-import Stack from '@mui/material/Stack'
-import styles from './Pagination.module.scss'
 import { useRouter } from 'next/navigation'
 import { updateSearchParams } from '../app/utils'
+import BlockButtonsComp from './BlockButtons.comp'
+import ButtonComp from './Button.comp'
 
 interface Props {
   pages?: number
@@ -27,13 +26,14 @@ export default function PaginationRounded({ pages, pageNumber }: Props) {
   }
   console.log(pageNumber)
   return (
-    <div className={styles.block}>
-      <button disabled={!Number(pageNumber)} onClick={handlePrevious}>
-        Show previous
-      </button>
-      <button onClick={handleNext}>Show next</button>
-    </div>
-
+    <BlockButtonsComp>
+      <ButtonComp
+        disabled={!Number(pageNumber)}
+        handle={handlePrevious}
+        text="Show previous"
+      />
+      <ButtonComp handle={handleNext} text="Show next" />
+    </BlockButtonsComp>
     /*    <Stack spacing={2} className={styles.block}>
       <Pagination count={pages} variant="outlined" shape="rounded" />
     </Stack>*/
