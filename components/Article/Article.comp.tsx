@@ -1,10 +1,9 @@
 'use client'
-import Link from 'next/link'
 import styles from './Article.module.scss'
-import { Item } from '../api'
+import { Item } from '../../api'
 import { useRouter } from 'next/navigation'
-import ButtonComp from './Button.comp'
-import BlockButtonsComp from './BlockButtons.comp'
+import ButtonComp from '../Button/Button.comp'
+import BlockButtonsComp from '../BlockButtons/BlockButtons.comp'
 
 interface Props {
   article: Item
@@ -23,7 +22,7 @@ const ArticleComp = ({ article }: Props) => {
           <p>{article.summary}</p>
           <div className={styles.source}>
             <em>Source: </em>
-            <Link href={article.url}>{article.news_site}</Link>
+            <a href={article.url}>{article.news_site}</a>
           </div>
         </div>
       </div>

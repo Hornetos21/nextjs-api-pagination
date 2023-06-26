@@ -1,14 +1,6 @@
 import { Metadata } from 'next'
-import ArticleComp from '../../../components/Article.comp'
+import ArticleComp from '../../../components/Article/Article.comp'
 import { getItem } from '../../../api'
-
-/*async function getData(id: string) {
-  const responce = await fetch(
-    `https://api.spaceflightnewsapi.net/v4/articles/${id}`
-  );
-  if (!responce.ok) throw new Error("Unable to fetch posts");
-  return responce.json();
-}*/
 
 interface Props {
   params: {

@@ -1,6 +1,6 @@
 import styles from './Articles.module.scss'
 import Link from 'next/link'
-import { Item } from '../api'
+import { Item } from '../../api'
 
 interface Props {
   articles: Item[]

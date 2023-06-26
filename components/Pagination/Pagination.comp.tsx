@@ -1,9 +1,9 @@
 'use client'
 import * as React from 'react'
 import { useRouter } from 'next/navigation'
-import { updateSearchParams } from '../utils'
-import BlockButtonsComp from './BlockButtons.comp'
-import ButtonComp from './Button.comp'
+import { updateSearchParams } from '../../utils'
+import BlockButtonsComp from '../BlockButtons/BlockButtons.comp'
+import ButtonComp from '../Button/Button.comp'
 
 interface Props {
   pages?: number

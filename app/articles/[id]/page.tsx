@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { getItem } from '../../../api'
-import ArticleComp from '../../../components/Article.comp'
+import ArticleComp from '../../../components/Article/Article.comp'
 
 interface Props {
   params: {
