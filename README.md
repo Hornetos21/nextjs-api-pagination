@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Задача: Реализовать список объектов и их расширенный просмотр
 
-## Getting Started
+Необходимо реализовать вёрстку списка объектов, получив их из JSON API.
 
-First, run the development server:
+При клике на отдельный объект, так же из JSON API, используя id, нужно получить расширенную информацию о нём и вывести на отдельной странице.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Можно использовать любое публичное API. Список для примера: https://github.com/public-apis/public-apis
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Условия
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Каждый объект должен отображать заголовок и краткую информацию.
+2. У списка должна быть рабочая пагинация.
+3. Со страницы объекта должна быть возможность вернуться к полному списку.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Требования
 
-## Learn More
+- Проект реализован на фреймворке Next.js
+- Код написан на TS или JS
+- Стили написаны на SASS
 
-To learn more about Next.js, take a look at the following resources:
+## Хорошо будет если
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Для стилизации компонентов используются CSS-модули.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Инструменты
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next js
+- SCSS
+- [Spaceflight News API](https://api.spaceflightnewsapi.net/v4/docs/#/)
